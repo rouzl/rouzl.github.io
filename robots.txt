@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-
+Allow: /sitemap.xml
 Sitemap: https://rouzl.github.io/sitemap.xml
