@@ -24,14 +24,18 @@
 
   <!-- <meta name="twitter:image" content="https://rouzl.github.io/img/og-home.png" /> -->
 
-  <!-- Speed & favicon -->
+  <!-- Speed & fonts & favicon -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.1/tailwindcss.min.js"></script>
   <link rel="icon" href="/img/favicon.png" />
 
   <!-- Minimal academic styling -->
   <style>
     :root { --measure: 72ch; }
+    body { font-family: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
     p, li { line-height: 1.6; }
     .abstract { max-width: var(--measure); text-align: justify; text-wrap: pretty; hyphens: auto; }
     main a { text-decoration: underline; text-underline-offset: 2px; }
@@ -113,73 +117,75 @@
     </div>
   </main>
 
-  <!-- Research (homepage summary; no dividers between papers) -->
+  <!-- Research -->
   <section id="research" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="flex items-baseline gap-4 mb-5">
+    <div class="flex items-baseline gap-4 mb-6">
       <h2 class="text-xl font-semibold tracking-tight">Research</h2>
       <a href="/research.html" class="text-gray-500 hover:text-gray-900 text-sm whitespace-nowrap">
         Full research page →
       </a>
     </div>
 
-    <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 mt-6 mb-1">Working Papers</h3>
+    <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 mb-3">Working Papers</h3>
 
     <!-- Paper 1 (JMP) -->
-    <article class="py-3">
-      <h4 class="text-base font-semibold">
-        Bequests, Fertility, and Barriers to Entrepreneurship: The Intergenerational Transmission of Economic Inequality
-        <span class="italic font-normal text-gray-600 whitespace-nowrap ml-1">(Job Market Paper)</span>
-        <a class="align-baseline text-blue-700 hover:text-blue-800 text-sm font-normal underline underline-offset-2 ml-2" href="/papers/jmp.pdf" target="_blank" rel="noopener">PDF</a>
-      </h4>
-      <p class="text-xs font-semibold mt-1">Recipient of the 2024 Southern Economic Association Graduate Student Award</p>
+    <article class="mb-6">
+      <h4 class="text-base font-medium">Bequests, Fertility, and Barriers to Entrepreneurship: The Intergenerational Transmission of Economic Inequality</h4>
+      <p class="text-sm text-gray-600 mt-1">
+        Job Market Paper
+        <span class="text-gray-400 mx-1.5">·</span>
+        <a class="text-blue-700 hover:text-blue-800 underline underline-offset-2" href="/papers/jmp.pdf" target="_blank" rel="noopener">PDF</a>
+        <span class="text-gray-400 mx-1.5">·</span>
+        SEA 2024 Graduate Student Award
+      </p>
       <details class="group mt-2">
         <summary class="list-none cursor-pointer inline-flex items-center gap-2">
-          <span class="transition-transform group-open:rotate-90">▶</span>
-          <span class="text-sm text-gray-700">Abstract</span>
+          <span class="transition-transform group-open:rotate-90 text-gray-500">▶</span>
+          <span class="text-sm text-gray-600">Abstract</span>
         </summary>
-        <div class="mt-3 text-sm text-gray-900 abstract">
+        <div class="mt-2 text-sm text-gray-900 abstract">
           <p>This paper studies how parents' fertility and bequest decisions jointly shape their children's access to entrepreneurship under borrowing constraints. While the existing literature on intergenerational inequality emphasizes bequests, it largely abstracts from how fertility choices dilute per-child bequests and thereby affect entrepreneurial opportunities. I develop an overlapping-generations model with endogenous fertility, bequests, and occupational choices, calibrated to U.S. data. The model shows that fertility-induced dilution of per-child bequests interacts with borrowing constraints to distort entrepreneurial entry and generate aggregate misallocation. Eliminating borrowing constraints in the U.S. raises income per capita by 13 percent but disproportionately benefits high-productivity firms, whose expansion raises the equilibrium interest rate and crowds out marginal entrepreneurs, while higher asset returns increase inequality and reduce intergenerational mobility.</p>
         </div>
       </details>
     </article>
 
     <!-- Paper 2 -->
-    <article class="py-3">
-      <h4 class="text-base font-semibold">
-        Individualism and Economic Development: Evidence from Cross-Country and Within-U.S. Analyses
-        <a class="align-baseline text-blue-700 hover:text-blue-800 text-sm font-normal underline underline-offset-2 ml-2" href="/papers/idv.pdf" target="_blank" rel="noopener">PDF</a>
-      </h4>
+    <article class="mb-6">
+      <h4 class="text-base font-medium">Individualism and Economic Development: Evidence from Cross-Country and Within-U.S. Analyses</h4>
+      <p class="text-sm text-gray-600 mt-1">
+        <a class="text-blue-700 hover:text-blue-800 underline underline-offset-2" href="/papers/idv.pdf" target="_blank" rel="noopener">PDF</a>
+      </p>
       <details class="group mt-2">
         <summary class="list-none cursor-pointer inline-flex items-center gap-2">
-          <span class="transition-transform group-open:rotate-90">▶</span>
-          <span class="text-sm text-gray-700">Abstract</span>
+          <span class="transition-transform group-open:rotate-90 text-gray-500">▶</span>
+          <span class="text-sm text-gray-600">Abstract</span>
         </summary>
-        <div class="mt-3 text-sm text-gray-900 abstract">
+        <div class="mt-2 text-sm text-gray-900 abstract">
           <p>This paper examines the impact of individualism on innovation and economic development over time. I begin by extending the cross-country literature, using the same time-invariant cultural measures but incorporating a longer time horizon and additional control variables. The estimated effects of individualism are inconsistent across specifications and time periods, particularly when I control for institutions. To address the limitations of time-invariant measures, I then turn to a within-U.S. analysis and construct time-varying, ancestry-based measures of individualism. This variation enables the use of fixed effects to capture local institutions and isolate the influence of culture. The results suggest that individualism either has a negative impact or no significant effect on innovation and economic development, in contrast to the prevailing findings in the existing literature.</p>
         </div>
       </details>
     </article>
 
-    <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 mt-7 mb-1">Work in Progress</h3>
+    <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 mt-8 mb-3">Work in Progress</h3>
 
-    <article class="py-3">
-      <h4 class="text-base font-semibold">Finance, Demographic Transition, and Structural Change</h4>
+    <article class="mb-4">
+      <h4 class="text-base font-medium">Finance, Demographic Transition, and Structural Change</h4>
     </article>
 
-    <article class="py-3">
-      <h4 class="text-base font-semibold">Multiple Entrepreneurial Talent Misallocation</h4>
+    <article class="mb-4">
+      <h4 class="text-base font-medium">Multiple Entrepreneurial Talent Misallocation</h4>
       <p class="text-sm text-gray-600 mt-1">with Javier Gonzalez</p>
     </article>
 
-    <article class="py-3">
-      <h4 class="text-base font-semibold">Culture, Mobility, and Economic Growth</h4>
+    <article>
+      <h4 class="text-base font-medium">Culture, Mobility, and Economic Growth</h4>
       <p class="text-sm text-gray-600 mt-1">with Ömer Özak and Chih Ming Tan</p>
     </article>
   </section>
 
   <!-- Teaching -->
   <section id="teaching" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    <div class="flex items-baseline gap-4 mb-4">
+    <div class="flex items-baseline gap-4 mb-6">
       <h2 class="text-xl font-semibold tracking-tight">Teaching</h2>
       <a href="/teaching.html" class="text-gray-500 hover:text-gray-900 text-sm whitespace-nowrap">
         Full teaching page →
@@ -187,8 +193,8 @@
     </div>
 
     <ul class="list-disc ml-6 space-y-2 text-sm">
-      <li><strong>Instructor</strong> · Intermediate Macroeconomics (Undergraduate)</li>
-      <li><strong>Teaching Assistant</strong> · Macroeconomic Theory I (PhD), Microeconomic Theory I &amp; II (PhD), Strategic Behavior (Master), Economic Analysis I &amp; II (Master), International Macroeconomic Theory and Policy (Undergraduate), Price Theory (Undergraduate)</li>
+      <li><span class="font-medium">Instructor</span> · Intermediate Macroeconomics (Undergraduate)</li>
+      <li><span class="font-medium">Teaching Assistant</span> · Macroeconomic Theory I (PhD), Microeconomic Theory I &amp; II (PhD), Strategic Behavior (Master), Economic Analysis I &amp; II (Master), International Macroeconomic Theory and Policy (Undergraduate), Price Theory (Undergraduate)</li>
     </ul>
   </section>
 
