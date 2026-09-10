@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>Research — Rouzhi Liang</title>
-  <meta name="description" content="Research page for Rouzhi Liang — working papers, abstracts, code and data." />
+  <meta name="description" content="Research page for Rouzhi Liang — working papers, works in progress, abstracts, and presentations." />
   <link rel="canonical" href="https://rouzl.github.io/research.html" />
 
   <!-- Open Graph / social preview -->
   <meta property="og:title" content="Research — Rouzhi Liang" />
-  <meta property="og:description" content="Working papers, abstracts, code and data." />
+  <meta property="og:description" content="Working papers, works in progress, abstracts, and presentations." />
   <meta property="og:url" content="https://rouzl.github.io/research.html" />
   <meta property="og:type" content="website" />
   <!-- <meta property="og:image" content="https://rouzl.github.io/img/og-research.png" /> -->
@@ -18,20 +18,22 @@
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Research — Rouzhi Liang" />
-  <meta name="twitter:description" content="Working papers, abstracts, code and data." />
+  <meta name="twitter:description" content="Working papers, works in progress, abstracts, and presentations." />
   <!-- <meta name="twitter:image" content="https://rouzl.github.io/img/og-research.png" /> -->
 
-  <!-- Speed & favicon -->
+  <!-- Speed & fonts & favicon -->
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/tailwindcss-cdn@3.4.1/tailwindcss.min.js"></script>
   <link rel="icon" href="/img/favicon.png" />
 
   <style>
     :root { --measure: 72ch; }
-    main p, main li { line-height: 1.75; }
+    body { font-family: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    p, li { line-height: 1.6; }
     .abstract { max-width: var(--measure); text-align: justify; text-wrap: pretty; hyphens: auto; }
-    main a { text-decoration: underline; text-underline-offset: 2px; }
-    main a:hover { text-decoration-thickness: 2px; }
     details[open] summary { margin-bottom: .5rem; }
     summary:focus-visible { outline: 2px solid #1d4ed8; outline-offset: 2px; }
   </style>
@@ -48,17 +50,28 @@
       "name": "Rouzhi Liang — Economics",
       "url": "https://rouzl.github.io/"
     },
-    "description": "Working papers, abstracts, code and data."
+    "description": "Working papers, works in progress, abstracts, and presentations."
   }
   </script>
 </head>
 <body class="bg-white text-gray-900 antialiased">
   <!-- Header (match homepage) -->
-  <header class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+  <header class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
     <div class="flex items-center justify-between">
-      <a href="/" class="text-2xl sm:text-3xl font-bold tracking-tight text-gray-900">Rouzhi Liang</a>
+      <div class="flex items-center gap-4">
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900">
+          <a href="/">Rouzhi Liang</a>
+        </h1>
+        <div class="flex items-center gap-3 text-blue-700">
+          <a href="https://x.com/RylieLiang" aria-label="X" class="hover:text-blue-800" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path d="M13.172 10.589 20.5 3h-2.828l-5.5 5.828L7.5 3H3l7.328 9.172L3 21h2.828l6-6.364L16.5 21H21l-7.828-10.411z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/rouzhi-liang-8b0053381/" aria-label="LinkedIn" class="hover:text-blue-800" target="_blank" rel="noopener">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path d="M4.98 3.5a2.5 2.5 0 1 0 .02 5 2.5 2.5 0 0 0-.02-5zM3 8.98h4v12H3v-12zM9 8.98h3.8v1.64h.05c.53-.96 1.83-1.98 3.77-1.98 4.03 0 4.77 2.65 4.77 6.1v6.24h-4v-5.53c0-1.32-.03-3.01-1.84-3.01-1.85 0-2.13 1.44-2.13 2.92v5.62H9v-12z"/></svg>
+          </a>
+        </div>
+      </div>
       <nav class="hidden sm:flex gap-6 text-lg text-gray-800">
-        <!-- Home 回到首页并定位到 #Home -->
         <a class="hover:text-blue-700" href="/#Home">Home</a>
         <a class="hover:text-blue-700" href="/CV.pdf" target="_blank" rel="noopener">CV</a>
         <a class="text-blue-700 font-semibold" href="/research.html" aria-current="page">Research</a>
@@ -68,64 +81,73 @@
   </header>
   <hr class="max-w-5xl mx-auto border-gray-200"/>
 
-  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-    <!-- Keep semantic H1 for SEO/a11y but hide it visually -->
-    <h1 class="sr-only">Research</h1>
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
     <!-- Working Papers -->
-    <section id="wp" class="mt-2">
-      <h2 class="text-2xl font-semibold tracking-tight mb-4">Working Papers</h2>
+    <section id="wp">
+      <h2 class="text-xl font-semibold tracking-tight mb-4">Working Papers</h2>
 
-      <article class="py-4">
-        <h3 class="text-lg font-semibold flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <span>Bequests, Fertility, and Barriers to Entrepreneurship</span>
-          <span class="text-gray-500 text-sm font-normal">(Job Market Paper)</span>
-          <a class="text-blue-700 hover:text-blue-800 text-sm font-normal" href="/papers/jmp.pdf" target="_blank" rel="noopener">PDF</a>
+      <article class="mb-6">
+        <h3 class="text-base font-medium">
+          Bequests, Fertility, and Barriers to Entrepreneurship: The Intergenerational Transmission of Economic Inequality
+          <a class="text-sm font-normal text-blue-700 hover:text-blue-800 underline underline-offset-2 ml-2" href="/papers/jmp.pdf" target="_blank" rel="noopener">PDF</a>
         </h3>
+        <p class="text-sm text-gray-600 mt-1">
+          Job Market Paper
+          <span class="text-gray-400 mx-1.5">·</span>
+          SEA 2024 Graduate Student Award
+        </p>
         <details class="group mt-2">
           <summary class="list-none cursor-pointer inline-flex items-center gap-2">
-            <span class="transition-transform group-open:rotate-90">▶</span>
-            <span class="text-sm text-gray-700">Abstract</span>
+            <span class="transition-transform group-open:rotate-90 text-gray-500">▶</span>
+            <span class="text-sm text-gray-600">Abstract</span>
           </summary>
-          <div class="mt-3 text-gray-900 abstract">
-            <p>This paper studies how parental fertility and bequest decisions influence children’s ability to become entrepreneurs in the presence of financial frictions. Entrepreneurs often face borrowing constraints, which can be alleviated by intergenerational transfers. Previous empirical evidence suggests that high-income parents typically have fewer children and leave larger bequests, reducing their children’s financing barriers relative to those from low-income families. However, most existing work on intergenerational transfers and entrepreneurship has emphasized bequests, giving less attention to fertility as a key dimension of parental resource allocation. To address this gap, I develop an overlapping generations model with endogenous fertility, bequest, and occupational choices, calibrated to US data. The model reveals that parental fertility and bequest decisions, when combined with financial frictions, distort children’s occupational choices and reduce efficiency. Counterfactual analysis shows that reducing financial frictions increases income per capita but slightly reduces the entrepreneurship rate, raises income inequality, and lowers intergenerational mobility. These findings suggest that financial policy should aim to promote development while addressing the concern of income concentration.</p>
+          <div class="mt-2 text-sm text-gray-900 abstract">
+            <p>This paper studies how parents' fertility and bequest decisions jointly shape their children's access to entrepreneurship under borrowing constraints. While the existing literature on intergenerational inequality emphasizes bequests, it largely abstracts from how fertility choices dilute per-child bequests and thereby affect entrepreneurial opportunities. I develop an overlapping-generations model with endogenous fertility, bequests, and occupational choices, calibrated to U.S. data. The model shows that fertility-induced dilution of per-child bequests interacts with borrowing constraints to distort entrepreneurial entry and generate aggregate misallocation. Eliminating borrowing constraints in the U.S. raises income per capita by 13 percent but disproportionately benefits high-productivity firms, whose expansion raises the equilibrium interest rate and crowds out marginal entrepreneurs, while higher asset returns increase inequality and reduce intergenerational mobility.</p>
           </div>
         </details>
       </article>
 
-      <article class="py-4">
-        <h3 class="text-lg font-semibold flex flex-wrap items-baseline gap-x-3 gap-y-1">
-          <span>Individualism and Innovation: Unraveling Culture’s Influence Across Time</span>
-          <a class="text-blue-700 hover:text-blue-800 text-sm font-normal" href="/papers/idv.pdf" target="_blank" rel="noopener">PDF</a>
+      <article class="mb-6">
+        <h3 class="text-base font-medium">
+          Individualism and Economic Development: Evidence from Cross-Country and Within-U.S. Analyses
+          <a class="text-sm font-normal text-blue-700 hover:text-blue-800 underline underline-offset-2 ml-2" href="/papers/idv.pdf" target="_blank" rel="noopener">PDF</a>
         </h3>
         <details class="group mt-2">
           <summary class="list-none cursor-pointer inline-flex items-center gap-2">
-            <span class="transition-transform group-open:rotate-90">▶</span>
-            <span class="text-sm text-gray-700">Abstract</span>
+            <span class="transition-transform group-open:rotate-90 text-gray-500">▶</span>
+            <span class="text-sm text-gray-600">Abstract</span>
           </summary>
-          <div class="mt-3 text-gray-900 abstract">
+          <div class="mt-2 text-sm text-gray-900 abstract">
             <p>This paper examines the impact of individualism on innovation and economic development over time. I begin by extending the cross-country literature, using the same time-invariant cultural measures but incorporating a longer time horizon and additional control variables. The estimated effects of individualism are inconsistent across specifications and time periods, particularly when I control for institutions. To address the limitations of time-invariant measures, I then turn to a within-U.S. analysis and construct time-varying, ancestry-based measures of individualism. This variation enables the use of fixed effects to capture local institutions and isolate the influence of culture. The results suggest that individualism either has a negative impact or no significant effect on innovation and economic development, in contrast to the prevailing findings in the existing literature.</p>
           </div>
         </details>
       </article>
     </section>
 
-    <hr class="my-10 border-gray-200"/>
+    <!-- Work in Progress -->
+    <section id="wip" class="mt-10">
+      <h2 class="text-xl font-semibold tracking-tight mb-4">Work in Progress</h2>
 
-    <section id="wip">
-      <h2 class="text-2xl font-semibold tracking-tight mb-4">Works in Progress</h2>
-      <ul class="list-disc ml-6 space-y-2">
-        <li>Fertility, Human Capital Investment, and Structural Change under Financial Frictions</li>
-        <li>Multiple Entrepreneurial Talent Misallocation (with Javier Gonzalez)</li>
-      </ul>
+      <article class="mb-4">
+        <h3 class="text-base font-medium">Finance, Demographic Transition, and Structural Change</h3>
+      </article>
+
+      <article class="mb-4">
+        <h3 class="text-base font-medium">Multiple Entrepreneurial Talent Misallocation</h3>
+        <p class="text-sm text-gray-600 mt-1">with Javier Gonzalez</p>
+      </article>
+
+      <article>
+        <h3 class="text-base font-medium">Culture, Mobility, and Economic Growth</h3>
+        <p class="text-sm text-gray-600 mt-1">with Ömer Özak and Chih Ming Tan</p>
+      </article>
     </section>
 
-    <hr class="my-10 border-gray-200"/>
-
     <!-- Presentations -->
-    <section id="talks">
-      <h2 class="text-2xl font-semibold tracking-tight mb-4">Presentations</h2>
-      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
+    <section id="talks" class="mt-10">
+      <h2 class="text-xl font-semibold tracking-tight mb-4">Presentations</h2>
+      <ul class="list-disc ml-6 space-y-2 text-sm">
         <li>
           Southern Economic Association Annual Meeting, Nov. 2024
           <span class="text-gray-600">(Graduate Student Award)</span>
@@ -136,7 +158,7 @@
     </section>
   </main>
 
-  <footer class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 border-t text-sm text-gray-600">
+  <footer class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 border-t text-sm text-gray-600">
     © <span id="year"></span> Rouzhi Liang
   </footer>
 
